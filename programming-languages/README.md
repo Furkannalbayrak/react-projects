@@ -51,9 +51,9 @@ Projeyi yerelde çalıştırmak için:
 7. Tarayıcıda verilen yerel adresi ziyaret edin (örn. `http://localhost:5173`).
 
 ### Build Alma
-1. Üretim içim optimize build almak
+1. Üretim içim optimize build almak:
      ```bash
-     npm run dev
+     npm run build
      ```
 2. Ardından önizleme için:
      ```bash
