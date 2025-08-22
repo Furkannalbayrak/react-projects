@@ -1,0 +1,21 @@
+.header{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    background-color: rgb(225, 39, 76);
+    min-height: 70px;
+    height: 15vh;
+    align-items: center;
+}
+.title{
+    font-size: 4.5rem;
+    color: white;
+}
+
+@media (max-width: 600px){
+    .header{
+        width: 100%;
+    }
+}
