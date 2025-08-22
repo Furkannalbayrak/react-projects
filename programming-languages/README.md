@@ -51,14 +51,14 @@ Projeyi yerelde çalıştırmak için:
 7. Tarayıcıda verilen yerel adresi ziyaret edin (örn. `http://localhost:5173`).
 
 ### Build Alma
-Üretim için optimize build almak:
-   ```bash
-   npm run build
-   ```
-Ardından önizleme için:
-   ```bash
-   npm run preview
-   ```
+1. Üretim içim optimize build almak
+     ```bash
+     npm run dev
+     ```
+2. Ardından önizleme için:
+     ```bash
+     npm run preview
+     ```
 
 ## 📜 License
 Bu proje MIT lisansı altında sunulabilir. Kullanmak isterseniz repoya bir `LICENSE` dosyası ekleyin ya da lisansı `MIT` olarak belirtin.
