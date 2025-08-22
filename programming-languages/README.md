@@ -48,13 +48,13 @@ Projeyi yerelde çalıştırmak için:
 
 ### Build Alma
 Üretim için optimize build almak:
-```bash
-npm run build
-```
+   ```bash
+   npm run build
+   ```
 Ardından önizleme için:
-```bash
-npm run preview
-```
+   ```bash
+   npm run preview
+   ```
 
 ## 📜 License
 Bu proje MIT lisansı altında sunulabilir. Kullanmak isterseniz repoya bir `LICENSE` dosyası ekleyin ya da lisansı `MIT` olarak belirtin.
