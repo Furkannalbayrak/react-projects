@@ -35,16 +35,16 @@ Projeyi yerelde çalıştırmak için:
 3. Proje klasörüne girin
 4. Terminal/Powershell’i bu klasörde açın
 5. Bağımlılıkları yükleyin
-```bash
-npm install
-```
+    ```bash
+    npm install
+    ```
 
 6. Geliştirme sunucusunu başlatın
-```bash
-npm run dev
-```
+    ```bash
+    npm run dev
+    ```
 
-3. Tarayıcıda verilen yerel adresi ziyaret edin (örn. `http://localhost:5173`).
+7. Tarayıcıda verilen yerel adresi ziyaret edin (örn. `http://localhost:5173`).
 
 ### Build Alma
 Üretim için optimize build almak:
