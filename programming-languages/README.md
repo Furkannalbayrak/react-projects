@@ -30,12 +30,16 @@ Bu proje, farklı yazılım dillerini birer kart olarak listeleyen basit ve işl
 
 Projeyi yerelde çalıştırmak için:
 
-1. Bağımlılıkları yükleyin
+1. Node.js bilgisayarınızda kurulu olmalı: https://nodejs.org (LTS sürümünü yükleyin)
+2. Bu projeyi bilgisayarınıza indirin/klonlayın
+3. Proje klasörüne girin
+4. Terminal/Powershell’i bu klasörde açın
+5. Bağımlılıkları yükleyin
 ```bash
 npm install
 ```
 
-2. Geliştirme sunucusunu başlatın
+6. Geliştirme sunucusunu başlatın
 ```bash
 npm run dev
 ```
