@@ -1,4 +1,4 @@
-### Programming Languages
+# Programming Languages
 Bu proje, farklı yazılım dillerini birer kart olarak listeleyen basit ve işlevsel bir React uygulamasıdır. Kartlarda dilin görseli, adı, kısa açıklaması, fiyatı ve harici bir bağlantı için "Daha fazla görüntüle" linki yer alır. Vite ile oluşturulmuş olup hızlı geliştirme deneyimi sunar.
 
 ## 🚀 Özellikler
@@ -21,7 +21,7 @@ Bu proje, farklı yazılım dillerini birer kart olarak listeleyen basit ve işl
 - `vite.config.js`: Vite yapılandırması.
 
 ## 💻 Kullanılan Teknolojiler ve Yazılım Dilleri
-- React (19)
+- React
 - Vite
 - JavaScript (ES Modules)
 - CSS
@@ -52,8 +52,7 @@ Ardından önizleme için:
 npm run preview
 ```
 
-## 🔧 Veri Düzenleme
-Yeni bir dil eklemek ya da mevcut içeriği değiştirmek için `src/Data.jsx` dosyasındaki `courses` dizisini güncelleyin. Her öğede şu alanlar bulunur: `id`, `title`, `description`, `price`, `link`, `image`.
-
 ## 📜 License
 Bu proje MIT lisansı altında sunulabilir. Kullanmak isterseniz repoya bir `LICENSE` dosyası ekleyin ya da lisansı `MIT` olarak belirtin.
+
+
