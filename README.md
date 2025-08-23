@@ -5,8 +5,7 @@ Tüm projeler **React + Vite** ile geliştirilmiş olup hepsinde javasript kulla
 
 
 ## 📌 Proje Listesi
-- [Discord](discord-clone/)
-- [McDonalds](mcdonalds-clone/)
+- [Programming Languages](programmin-languages/)
 
 Her projeye **tıklayarak** detaylarına ulaşabilirsiniz!
 
