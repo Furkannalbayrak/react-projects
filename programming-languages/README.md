@@ -9,6 +9,7 @@ Bu proje benim react alanındaki ilk projemdir. Farklı yazılım dillerini bire
 - **Bileşen tabanlı mimari**: `Header`, `Course`, `App` gibi yeniden kullanılabilir bileşenler.
 - **Statik veri kaynağı**: `src/Data.jsx` içinde düzenlenebilir veri.
 - **Hızlı geliştirme**: Vite ile anında yenileme ve optimize build.
+- **Responsive tasarım**: Farklı ekran boyutlarına uyumlu, mobil ve masaüstü cihazlarda düzgün görüntüleme.
 
 
 ## 📂 Proje Yapısı
