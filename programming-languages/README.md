@@ -61,6 +61,6 @@ Projeyi yerelde çalıştırmak için:
      ```
 
 ## 📜 License
-Bu proje MIT lisansı altında sunulabilir. Kullanmak isterseniz repoya bir `LICENSE` dosyası ekleyin ya da lisansı `MIT` olarak belirtin.
+Bu proje **MIT lisansı** altında sunulmaktadır. Daha fazla bilgi için LICENSE dosyasına göz atabilirsiniz.
 
 
