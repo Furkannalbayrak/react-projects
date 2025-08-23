@@ -4,22 +4,13 @@ Bu depo, **React.js** kullanılarak hazırlanmış başlangıç, orta ve ileri s
 Tüm projeler **React + Vite** ile geliştirilmiş olup çoğunda **TailwindCSS** kullanılmıştır.
 
 
-### 🟢 Small Algorithms 
-- [Body mass index](Body-mass-index/)
-- [Gas station](Gas-station/)
-- [Prime number check](Prime-number-check/)
-- [Factorial calculation](Factorial-calculation/)
-- [Armstrong number check](Armstrong-number-check/)
-- [Letter counter](Letter-counter/)
-- [Perfect number check](Perfect-number-check/)
-- [Decimal to binary converter](Decimal-to-binary-converter/)
-- [Binary to decimal converter](Binary-to-decimal-converter/)
-- [Laptop filter](Laptop-filter/)
-- [Book finder](Book-finder/)
+## 📌 Proje Listesi
+- [Discord](discord-clone/)
+- [McDonalds](mcdonalds-clone/)
 
-You can access the details of each project by **click**!
+Her projeye **tıklayarak** detaylarına ulaşabilirsiniz!
 
-## 🛠 Installation and Usage (For Small Algorithms Only)
+## 🛠 Installation and Usage
 
 Follow these steps to clone this project to your computer:
 
