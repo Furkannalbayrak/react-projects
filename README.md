@@ -1,7 +1,7 @@
 # React Projects
 
 Bu repo, **React.js** kullanılarak hazırlanmış başlangıç, orta ve ileri seviye projeleri içermektedir.  
-Tüm projeler **React + Vite** ile geliştirilmiş olup hepsinde javascript kullanılmıştır.  Bazı projelerde **vanilla CSS** bazılarında ise **Tailwind CSS** kullanılmıştır.
+Tüm projeler **React + Vite** ile geliştirilmiş olup hepsinde javascript kullanılmıştır.  Bazı projelerde **vanilla CSS** bazılarında ise **Tailwind CSS** kullanılmıştır. Projelerin hepsinde responsive tasarım bulunmaktadır.
 
 
 ## 📌 Proje Listesi
