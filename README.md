@@ -1,6 +1,6 @@
 # React Projects
 
-Bu depo, **React.js** kullanılarak hazırlanmış başlangıç, orta ve ileri seviye projeleri içermektedir.  
+Bu repo, **React.js** kullanılarak hazırlanmış başlangıç, orta ve ileri seviye projeleri içermektedir.  
 Tüm projeler **React + Vite** ile geliştirilmiş olup çoğunda **TailwindCSS** kullanılmıştır.
 
 
@@ -12,31 +12,38 @@ Her projeye **tıklayarak** detaylarına ulaşabilirsiniz!
 
 ## 🛠 Installation and Usage
 
-Follow these steps to clone this project to your computer:
+Projeleri yerelde çalıştırmak için:
 
-1. **Clone the Project Folder**:
-   - To clone the project from GitHub, run the following command in your terminal or command line:
+1. Node.js bilgisayarınızda kurulu olmalı: https://nodejs.org (LTS sürümünü yükleyin)
+2. Bu projeyi bilgisayarınıza indirin/klonlayın
+3. Proje klasörüne girin
+4. Terminal/Powershell’i bu klasörde açın
+5. Bağımlılıkları yükleyin
      ```bash
-     git clone https://github.com/Furkannalbayrak/JavaScript.git
+     npm install
      ```
 
-2. **Navigate to the Project Folder**:
-   - To go to the cloned project, run the following command:
+6. Geliştirme sunucusunu başlatın
      ```bash
-     cd JavaScript
+     npm run dev
      ```
 
-3. **Enter the Algorithms Folder**:
-   - Navigate to the algorithms folder to access the file you want to run:
+7. Tarayıcıda verilen yerel adresi ziyaret edin (örn. `http://localhost:5173`).
+
+### Build Alma
+1. Üretim içim optimize build almak:
      ```bash
-     cd algorithms
+     npm run build
      ```
-4. **Open the Required File**:
-   - To run the project, you can open the `index.html` file in a browser.
+2. Ardından önizleme için:
+     ```bash
+     npm run preview
+     ```
+
      
 When you run the project locally, JavaScript will work correctly in the browser.
      
 
 
 ## 📜 License
-This repository is provided under the MIT license. See the LICENSE file for more information.
+Bu repo **MIT lisansı** altında sunulmaktadır. Daha fazla bilgi için LICENSE dosyasına göz atabilirsiniz.
