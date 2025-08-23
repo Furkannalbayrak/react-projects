@@ -5,7 +5,7 @@ Tüm projeler **React + Vite** ile geliştirilmiş olup hepsinde javasript kulla
 
 
 ## 📌 Proje Listesi
-- [Programming Languages](programmin-languages/)
+- [Programming Languages](programming-languages/)
 
 Her projeye **tıklayarak** detaylarına ulaşabilirsiniz!
 
