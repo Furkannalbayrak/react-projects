@@ -1,15 +1,7 @@
-# react-projects
+# React Projects
 
-# JavaScript Codes
-
-This repository contains a variety of JavaScript code designed for basic, intermediate and advanced levels. All projects are HTML based projects.
-
-## 📌 Table of Contents
-- [🟢 Small Algorithms](#small-algorithms)
-- [🔵 Application Projects](#application-projects)
-- [🛠 Installation and Usage](#installation-and-usage)
-- [📜 License](#license)
-
+Bu depo, **React.js** kullanılarak hazırlanmış başlangıç, orta ve ileri seviye projeleri içermektedir.  
+Tüm projeler **React + Vite** ile geliştirilmiş olup çoğunda **TailwindCSS** kullanılmıştır.
 
 
 ### 🟢 Small Algorithms 
@@ -24,18 +16,6 @@ This repository contains a variety of JavaScript code designed for basic, interm
 - [Binary to decimal converter](Binary-to-decimal-converter/)
 - [Laptop filter](Laptop-filter/)
 - [Book finder](Book-finder/)
-
-You can access the details of each algorithm by **click**!
-
-### 🔵 Application Projects  
-- [Supermarket Money Card](Supermarket-money-card/)
-- [Todo List](Todo-list/)
-- [Todo List v2](Todo-list-v2/)
-- [Image Search](Image-search/)
-- [Currency Converter](Currency-converter/)
-- [Weather App](Weather-app/)
-- [Movie Search](Movie-search/)
-  
 
 You can access the details of each project by **click**!
 
