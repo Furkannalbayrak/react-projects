@@ -1,5 +1,6 @@
-### Programming Languages
-Bu proje, farklı yazılım dillerini birer kart olarak listeleyen basit ve işlevsel bir React uygulamasıdır. Kartlarda dilin görseli, adı, kısa açıklaması, fiyatı ve harici bir bağlantı için "Daha fazla görüntüle" linki yer alır. Vite ile oluşturulmuş olup hızlı geliştirme deneyimi sunar.
+# Programming Languages
+Bu proje benim react alanındaki ilk projemdir. Farklı yazılım dillerini birer kart olarak listeleyen basit ve işlevsel bir React uygulamasıdır. Kartlarda dilin görseli, adı, kısa açıklaması, fiyatı ve harici bir bağlantı için "Daha fazla görüntüle" linki yer alır. Vite ile oluşturulmuş olup hızlı geliştirme deneyimi sunar.
+
 
 ## 🚀 Özellikler
 
@@ -8,6 +9,8 @@ Bu proje, farklı yazılım dillerini birer kart olarak listeleyen basit ve işl
 - **Bileşen tabanlı mimari**: `Header`, `Course`, `App` gibi yeniden kullanılabilir bileşenler.
 - **Statik veri kaynağı**: `src/Data.jsx` içinde düzenlenebilir veri.
 - **Hızlı geliştirme**: Vite ile anında yenileme ve optimize build.
+- **Responsive tasarım**: Farklı ekran boyutlarına uyumlu, mobil ve masaüstü cihazlarda düzgün görüntüleme.
+
 
 ## 📂 Proje Yapısı
 
@@ -20,40 +23,45 @@ Bu proje, farklı yazılım dillerini birer kart olarak listeleyen basit ve işl
 - `src/main.jsx`: Uygulama giriş noktası.
 - `vite.config.js`: Vite yapılandırması.
 
+
 ## 💻 Kullanılan Teknolojiler ve Yazılım Dilleri
-- React (19)
+- React
 - Vite
 - JavaScript (ES Modules)
 - CSS
+
 
 ## 🛠 Kurulum ve Kullanım
 
 Projeyi yerelde çalıştırmak için:
 
-1. Bağımlılıkları yükleyin
-```bash
-npm install
-```
+1. Node.js bilgisayarınızda kurulu olmalı: https://nodejs.org (LTS sürümünü yükleyin)
+2. Bu projeyi bilgisayarınıza indirin/klonlayın
+3. Proje klasörüne girin
+4. Terminal/Powershell’i bu klasörde açın
+5. Bağımlılıkları yükleyin
+     ```bash
+     npm install
+     ```
 
-2. Geliştirme sunucusunu başlatın
-```bash
-npm run dev
-```
+6. Geliştirme sunucusunu başlatın
+     ```bash
+     npm run dev
+     ```
 
-3. Tarayıcıda verilen yerel adresi ziyaret edin (örn. `http://localhost:5173`).
+7. Tarayıcıda verilen yerel adresi ziyaret edin (örn. `http://localhost:5173`).
 
 ### Build Alma
-Üretim için optimize build almak:
-```bash
-npm run build
-```
-Ardından önizleme için:
-```bash
-npm run preview
-```
-
-## 🔧 Veri Düzenleme
-Yeni bir dil eklemek ya da mevcut içeriği değiştirmek için `src/Data.jsx` dosyasındaki `courses` dizisini güncelleyin. Her öğede şu alanlar bulunur: `id`, `title`, `description`, `price`, `link`, `image`.
+1. Üretim içim optimize build almak:
+     ```bash
+     npm run build
+     ```
+2. Ardından önizleme için:
+     ```bash
+     npm run preview
+     ```
 
 ## 📜 License
-Bu proje MIT lisansı altında sunulabilir. Kullanmak isterseniz repoya bir `LICENSE` dosyası ekleyin ya da lisansı `MIT` olarak belirtin.
+Bu proje **MIT lisansı** altında sunulmaktadır. Daha fazla bilgi için LICENSE dosyasına göz atabilirsiniz.
+
+
