@@ -9,6 +9,7 @@ Bu proje, farklı para birimleri arasında hızlı ve basit şekilde dönüşüm
 - **Basit ve anlaşılır arayüz**: Tek ekranda giriş, birim seçimi ve sonuç.
 - **Bileşen tabanlı mimari**: `Currency`, `App` gibi yeniden kullanılabilir bileşenler.
 - **Hızlı geliştirme**: Vite ile hızlı başlatma ve geliştirme deneyimi.
+- **Responsive tasarım**: Farklı ekran boyutlarına uyumlu, mobil ve masaüstü cihazlarda düzgün görüntüleme.
 
 ## 📂 Proje Yapısı
 
@@ -34,32 +35,26 @@ Projeyi yerelde çalıştırmak için:
 3. Proje klasörüne girin
 4. Terminal/Powershell’i bu klasörde açın
 5. Bağımlılıkları yükleyin
-```
-npm install
-```
+     ```bash
+     npm install
+     ```
+
 6. Geliştirme sunucusunu başlatın
-```
-npm run dev
-```
+     ```bash
+     npm run dev
+     ```
+     
 7. Tarayıcıda verilen yerel adresi ziyaret edin (örn. `http://localhost:5173`).
 
-### API Anahtarı Hakkında
-Uygulama FreeCurrencyAPI kullanır. Üretim senaryolarında API anahtarınızı kodun içine gömmek yerine `.env` dosyasıyla yönetmeniz önerilir.
-```
-# .env
-VITE_FREECURRENCYAPI_KEY=your_api_key_here
-```
-Ardından istek yaparken `import.meta.env.VITE_FREECURRENCYAPI_KEY` kullanabilirsiniz.
-
-## 🏗️ Build Alma
-1. Üretim için optimize build almak:
-```
-npm run build
-```
+### Build Alma
+1. Üretim içim optimize build almak:
+     ```bash
+     npm run build
+     ```
 2. Ardından önizleme için:
-```
-npm run preview
-```
+     ```bash
+     npm run preview
+     ```
 
 ## 📜 License
-Bu proje **MIT lisansı** altında sunulmaktadır. Daha fazla bilgi için `LICENSE` dosyasına göz atabilirsiniz.
+Bu proje **MIT lisansı** altında sunulmaktadır. Daha fazla bilgi için LICENSE dosyasına göz atabilirsiniz
