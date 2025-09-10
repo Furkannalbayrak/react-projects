@@ -6,6 +6,7 @@ Tüm projeler **React + Vite** ile geliştirilmiş olup hepsinde javascript kull
 
 ## 📌 Proje Listesi
 - [Programming Languages](programming-languages/)
+- [Currency Converter](currency-converter/)
 
 Her projeye **tıklayarak** detaylarına ulaşabilirsiniz!
 
