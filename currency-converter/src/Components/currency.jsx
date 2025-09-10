@@ -1,10 +1,10 @@
-import React, { use, useState } from 'react'
+import React, { useState } from 'react'
 import '../css/currency.css';
 import { FaArrowRight } from "react-icons/fa";
 import axios from 'axios';
 
 const BASE_URL="https://api.freecurrencyapi.com/v1/latest";
-const APIKEY = "fca_live_jw02B7fyuXhVoSYA0HG50g2BrEdFv0hNAdOdNRl0";
+const APIKEY = import.meta.env.VITE_FREECURRENCYAPI_KEY;
 
 function currency() {
 
@@ -44,7 +44,7 @@ function currency() {
                         <option >EUR</option>
                     </select>
 
-                    <input type="number" readonly onChange={(e)=> setResult(e.target.value)} className='result' value={result} />
+                    <input type="number" readOnly onChange={(e)=> setResult(e.target.value)} className='result' value={result} />
                 </div>
             </div>
 
