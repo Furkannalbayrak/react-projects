@@ -1,5 +1,5 @@
 # Todo List App
-Bu proje benim React alanındaki ilk todo uygulamamdır. Görev ekleme, düzenleme ve silme işlemlerini gerçekleştirebilen modern ve kullanıcı dostu bir React uygulamasıdır. Vite ile oluşturulmuş olup hızlı geliştirme deneyimi sunar. Responsive tasarımı sayesinde mobil ve masaüstü cihazlarda mükemmel çalışır.
+Bu proje, görev ekleme, düzenleme ve silme işlemlerini gerçekleştirebilen modern ve kullanıcı dostu bir React uygulamasıdır. Vite ile oluşturulmuş olup hızlı geliştirme deneyimi sunar. Responsive tasarımı sayesinde mobil ve masaüstü cihazlarda mükemmel çalışır.
 
 
 ## 🚀 Özellikler
@@ -28,7 +28,7 @@ Bu proje benim React alanındaki ilk todo uygulamamdır. Görev ekleme, düzenle
 
 
 ## 💻 Kullanılan Teknolojiler ve Yazılım Dilleri
-- React 19.0.0
+- React
 - Vite
 - JavaScript (ES Modules)
 - CSS3
