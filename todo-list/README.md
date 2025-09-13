@@ -1,4 +1,4 @@
-# Todo List App
+# Todo List
 Bu proje, görev ekleme, düzenleme ve silme işlemlerini gerçekleştirebilen modern ve kullanıcı dostu bir React uygulamasıdır. Vite ile oluşturulmuş olup hızlı geliştirme deneyimi sunar. Responsive tasarımı sayesinde mobil ve masaüstü cihazlarda mükemmel çalışır.
 
 
