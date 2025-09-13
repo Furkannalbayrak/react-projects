@@ -30,7 +30,7 @@ Bu proje, farklı para birimleri arasında hızlı ve basit şekilde dönüşüm
 
 Projeyi yerelde çalıştırmak için:
 
-1. Node.js bilgisayarınızda kurulu olmalı: `https://nodejs.org` (LTS sürümü önerilir)
+1. Node.js bilgisayarınızda kurulu olmalı: https://nodejs.org (LTS sürümü önerilir)
 2. Bu projeyi bilgisayarınıza indirin/klonlayın
 3. Proje klasörüne girin
 4. Terminal/Powershell’i bu klasörde açın
