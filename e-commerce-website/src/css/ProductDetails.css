@@ -1,36 +1,41 @@
-
-.container{
+.container {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.image{
+.image {
     width: 95%;
 }
-.first-section{
+
+.first-section {
     width: 31.5%;
 }
-.second-section{
+
+.second-section {
     width: 65%;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.title{
-    font-size: 2.3rem;
+.title {
+    font-size: 2rem;
 }
-.description{
-    font-size: 1.4rem;
+
+.description {
+    font-size: 1.2rem;
 }
-.category{
-    font-size: 1.8rem;
+
+.category {
+    font-size: 1.5rem;
 }
-.ucret{
-    font-size: 3rem;
+
+.ucret {
+    font-size: 2.2rem;
     color: rgb(202, 33, 33);
 }
-.icons{
+
+.icons {
     display: flex;
     gap: 20px;
     width: 80%;
@@ -40,12 +45,13 @@
     align-items: center;
 }
 
-.button-parent{
+.button-parent {
     display: flex;
     width: 81%;
     justify-content: flex-end;
 }
-.button{
+
+.button {
     padding: 12px 20px;
     border-radius: 12px;
     transform: translateY(-60px);
@@ -56,7 +62,39 @@
     transition: 0.3s;
     font-weight: bold;
 }
-.button:hover{
+
+.button:hover {
     background-color: rgb(169, 4, 4);
     box-shadow: 1px 1px 10px rgb(221, 34, 34);
+}
+
+
+
+@media(max-width: 1210px) {
+    .second-section {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .category {
+        font-size: 1.4rem;
+    }
+
+    .ucret {
+        font-size: 2rem;
+        color: rgb(202, 33, 33);
+    }
+    .icons{
+        font-size: 1.8rem;
+    }
+    .button{
+        font-size: 0.9rem;
+    }
 }

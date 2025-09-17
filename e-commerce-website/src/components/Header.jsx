@@ -16,7 +16,7 @@ function Header() {
   const [thema, setThema] = useState(true);
   const [value, setValue] = useState("");
 
-  const {products} = useSelector((store)=>store.basket);
+  const { products } = useSelector((store) => store.basket);
 
   const changeThema = () => {
     const root = document.getElementById("root");
@@ -33,26 +33,29 @@ function Header() {
     setThema(!thema);
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     dispatch(setSearchedProduct(value));
   }, [value])
 
   return (
     <div className='main-header'>
-      <div className='flex-row' onClick={() => navigate("/")} style={{ gap: "20px" }}>
+      <div className='flex-row main-logo' onClick={() => navigate("/")} style={{ gap: "20px" }}>
         <img className='logo' src="./src/images/logo.png" />
         <p className='logo-text'>Furkan A.Ş</p>
       </div>
 
-      <div className='flex-row' style={{ gap: "15px" }} >
-        <input onChange={(e)=> setValue(e.target.value)} className='search-input' type="text"  placeholder='Search' />
-        {
-          thema ? <FaMoon className='icon-thema' onClick={changeThema} /> : <IoSunny className='icon-thema' onClick={changeThema} />
-        }
-        <Badge onClick={()=> dispatch(setDrawer())} badgeContent={products.length} color="error">
+      <div className='main-input' style={{ gap: "15px" }} >
+        <input onChange={(e) => setValue(e.target.value)} className='search-input' type="text" placeholder='Search' />
+       
+        <div>
+          {
+            thema ? <FaMoon className='icon-thema' onClick={changeThema} /> : <IoSunny className='icon-thema' onClick={changeThema} />
+          }
+        </div>
+
+        <Badge onClick={() => dispatch(setDrawer())} badgeContent={products.length} color="error">
           <FaBasketShopping className='icon-basket' />
         </Badge>
-
       </div>
     </div>
   )

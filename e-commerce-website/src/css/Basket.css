@@ -55,7 +55,7 @@
 }
 @media(max-width: 650px){
     .basket-card{
-        width: 400px;
+        width: 300px;
     }
     .basket-price{
         font-size: 1.10rem;

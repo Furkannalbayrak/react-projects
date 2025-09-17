@@ -62,6 +62,13 @@
     background-color: rgb(217, 182, 137);
 }
 
+.not-found{
+    color: red;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
 @media(max-width: 670px){
     .cards{
         width: 220px;

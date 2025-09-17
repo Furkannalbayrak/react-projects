@@ -64,9 +64,11 @@ function ProductDetails() {
                 <h5 className='category'>{category} </h5>
                 <p className='description'>{description} </p>
                 <h1 className='ucret'>{price}$ </h1>
+
                 <div className='icons'>
                     <FaMinusCircle onClick={azalt} /> {amount} <FaPlusCircle onClick={arttir} />
                 </div>
+
                 <div className='button-parent'>
                     <button onClick={addBasket} className='button'>Sepete Ekle</button>
                 </div>

@@ -11,21 +11,44 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 0px;
+    gap: 25px;
 }
+.main-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .search-input{
     border: none;
     border-bottom: 1px solid grey;
     outline: none;
     padding: 7px 10px;
-    width: 150%;
+    width: 300px;
     border-radius: 10px;
     font-size: 1.1rem;
 }
 .icon-thema{
-    font-size: 50px;
+    font-size: 30px;
     cursor: pointer;
 }
 .icon-basket{
     font-size: 30px;
     cursor: pointer;
+}
+
+@media(max-width: 680px){
+    .main-logo{
+        display: none;
+    }
+    .main-input{
+        width: 80%;
+    }
+    .main-header{
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .search-input{
+        width: 90%;
+    }
 }
