@@ -40,7 +40,7 @@ function Header() {
   return (
     <div className='main-header'>
       <div className='flex-row main-logo' onClick={() => navigate("/")} style={{ gap: "20px" }}>
-        <img className='logo' src="./src/images/logo.png" />
+        <img className='logo' src="/images/logo.png" />
         <p className='logo-text'>Furkan A.Ş</p>
       </div>
 
