@@ -13,18 +13,18 @@ function ProductList() {
         dispatch(getAllProducts());
     }, [])
 
+    const filteredProducts = searchedProduct === ""
+        ? products
+        : products.filter((urun) => urun.title.toLowerCase().includes(searchedProduct.toLowerCase()))
+
     return (
         <div className='container'>
             {
-                searchedProduct == "" 
-                ? products && products.map((urun) => (
-                    <Urun key={urun.id} urun={urun} />
-
-                )) //filter: dizi üzerinde dönerken urun başlıgını içeren elemanlarla yeni bir dizi oluşturuyor 
-                : products && products.filter((urun) => urun.title.toLowerCase().includes(searchedProduct.toLowerCase()))
-                .map((urun)=>(
-                    <Urun key={urun.id} urun={urun} />
-                ))
+                filteredProducts && filteredProducts.length > 0
+                    ? filteredProducts.map((urun) => (
+                        <Urun key={urun.id} urun={urun} />
+                    ))
+                    : <p className='not-found'>Ürün bulunamadı</p>
             }
         </div>
     )
