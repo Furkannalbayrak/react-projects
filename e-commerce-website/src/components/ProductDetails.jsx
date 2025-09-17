@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom'
-import { setSelectedProduct } from '../redux/productSlice';
+import { getProductById } from '../redux/productSlice';
 import '../css/ProductDetails.css'
 import { FaPlusCircle } from "react-icons/fa";
 import { FaMinusCircle } from "react-icons/fa";
@@ -10,10 +10,9 @@ import { addToBasket, calculateTotalPrice } from '../redux/basketSlice';
 function ProductDetails() {
 
     const { id } = useParams();
-    const { products } = useSelector((store) => store.product)
     const dispatch = useDispatch();
 
-    const { selectedProduct } = useSelector((store) => store.product)
+    const { selectedProduct, loading } = useSelector((store) => store.product)
     const { category, title, image, price, description } = selectedProduct;
 
     const [amount, setAmount] = useState(1);
@@ -28,16 +27,8 @@ function ProductDetails() {
     }
 
     useEffect(() => {
-        getProductById();
-    }, [])
-
-    const getProductById = () => {
-        products && products.map((urun) => { //burda id sini bulduğumuz ürünü redux içindeki selectedProduct objesine geçiyoruz ve yolu uaztıyoruz ancak direkt olarak bir state tanımlayıp [product,setProduct] setProduct(urun) diyebilirdik
-            if (urun.id == id) {
-                dispatch(setSelectedProduct(urun));
-            }
-        })
-    }
+        dispatch(getProductById(id));
+    }, [id, dispatch])
 
     const addBasket = ()=>{
         const newObject = {
@@ -51,6 +42,14 @@ function ProductDetails() {
 
         dispatch(addToBasket(newObject));
         dispatch(calculateTotalPrice());
+    }
+
+    if (loading) {
+        return <div className='container'>Yükleniyor...</div>
+    }
+
+    if (!selectedProduct || Object.keys(selectedProduct).length === 0) {
+        return <div className='container'>Ürün bulunamadı</div>
     }
 
     return (
