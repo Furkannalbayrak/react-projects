@@ -1,0 +1,31 @@
+.logo{
+    width: 50px;
+    border-radius: 50px;
+}
+.logo-text{
+    font-family: Arial, Helvetica, sans-serif;    
+    font-size: 1.6rem;
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+.search-input{
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    padding: 7px 10px;
+    width: 150%;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+.icon-thema{
+    font-size: 50px;
+    cursor: pointer;
+}
+.icon-basket{
+    font-size: 30px;
+    cursor: pointer;
+}
