@@ -21,7 +21,8 @@ body{
   display: flex;
   flex-direction: column;
   width: 35%;
-  margin: 50px auto;
+  margin: 0 auto;
+  padding-top: 50px;
   align-items: center;
   gap: 20px;
 }
@@ -55,6 +56,11 @@ body{
   color: white;
   font-weight: bold;
   padding: 10px 40px 10px 30px;
+}
+
+.showTodoList{
+  margin-top: 50px;
+  padding-bottom: 50px;
 }
 
 .newInput{
