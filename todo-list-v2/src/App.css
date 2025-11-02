@@ -1,0 +1,126 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("https://images.pexels.com/photos/5717479/pexels-photo-5717479.jpeg?cs=srgb&dl=pexels-polina-kovaleva-5717479.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 70px;
+    min-height: 99vh;
+    background-position: center;
+}
+
+.container{
+    padding-top: 50px;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.getTodo{
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    padding-left: 17px;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.778);
+    border: none;
+    outline: none;
+}
+.addTodo{
+    display: flex;
+    margin: 30px auto;
+    padding: 9px 12px 9px 12px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    background-color: rgb(239, 207, 166);
+    transition: 0.2s;
+    outline: none;
+    border: 2px solid rgb(221, 200, 138);
+}
+.addTodo:hover{
+    background-color: rgb(215, 179, 132);
+    transform: scale(1.03);
+}
+
+.todoList-parent{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.todoList{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px 20px 10px 25px;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    background-color: rgba(242, 188, 188, 0.873);
+    margin-top: 12px;
+}
+
+.icons{
+    display: flex;
+    gap: 15px;
+    font-size: 28px;
+}
+.notCheck{
+    background-color: rgb(77, 200, 91);
+    border-radius: 100px;
+    transition: 0.2s;
+}
+.check{
+    color: rgb(38, 140, 94);
+    transition: 0.2s;
+}
+.check:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.close{
+    color: rgb(157, 22, 22);
+    transition: 0.2s;
+}
+.close:hover{
+    transform: scale(1.2);
+    color: red;
+    cursor: pointer;
+}
+
+
+/* RESPONSİVE TASARIM */
+
+@media(max-width: 580px){
+    .getTodo{
+        width: 280px;
+    }
+    .container{
+        padding: 0;
+        padding-top: 50px;
+    }
+    .todoList-parent{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .todoList{
+         padding: 10px 15px 10px 15px;
+         font-size: 1.1rem;
+    }
+    .icons{
+        gap: 5px;
+    }
+    .addTodo{
+        padding: 8px 10px 8px 10px;
+        font-size: 1.1rem;
+    }
+}
