@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../css/currency.css';
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRightLong } from "react-icons/fa6";
 import axios from 'axios';
 
 const BASE_URL="https://api.freecurrencyapi.com/v1/latest";
@@ -36,7 +36,7 @@ function currency() {
                         <option >TRY</option>
                     </select>
 
-                    <FaArrowRight style={{ fontSize: "31px", marginRight: "10px" }} />
+                    <FaArrowRightLong style={{ fontSize: "40px", marginRight: "15px", marginLeft:"15px" }} />
 
                     <select onChange={(e)=> setSecondUnit(e.target.value)} className='second-option'>
                         <option >TRY</option>
