@@ -10,8 +10,11 @@ function TodoList({oneTodo, RemoveTodo, onEditTodo}) {
     const [control, setControl] = useState(false);
     const [editTodo, setEditTodo] = useState(oneTodo.task);
 
-    const remove = ()=>{
-        RemoveTodo(oneTodo.id);
+    const remove = (e)=>{
+        e.stopPropagation(); // Prevent event bubbling
+        if (window.confirm('Bu görevi silmek istediğinizden emin misiniz?')) {
+            RemoveTodo(oneTodo.id);
+        }
     }
 
     const updateTodo = ()=>{
@@ -26,15 +29,25 @@ function TodoList({oneTodo, RemoveTodo, onEditTodo}) {
 
     return (
         <div className='todolist'>
-            <p>
+            <p className="input-wrapper">
                 {
                     control ? <input value={editTodo}  onChange={(e)=> setEditTodo(e.target.value)} type="text" className='newInput' /> : oneTodo.task 
                 }
             </p>
             <div className='icons'>
-                <RiCloseLargeFill onClick={remove} />
+                <RiCloseLargeFill onClick={remove} className={control ? 'disabled-icon' : ''} />
                 {
-                    control ? <FaCheck onClick={updateTodo} /> : <LiaEdit onClick={()=> setControl(true)} />
+                    control ? (
+                        <FaCheck onClick={(e) => {
+                            e.stopPropagation();
+                            updateTodo();
+                        }} />
+                    ) : (
+                        <LiaEdit onClick={(e) => {
+                            e.stopPropagation();
+                            setControl(true);
+                        }} />
+                    )
                 }
             </div>
         </div >
