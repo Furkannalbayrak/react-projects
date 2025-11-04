@@ -8,6 +8,7 @@ Tüm projeler **React + Vite** ile geliştirilmiş olup hepsinde javascript kull
 - [Programming Languages](programming-languages/)
 - [Currency Converter](currency-converter/)
 - [Todo List](todo-list/)
+- [Todo List v2](todo-list-v2/)
 - [E-commerce Website](e-commerce-website/)
 
 
