@@ -10,6 +10,7 @@ Tüm projeler **React + Vite** ile geliştirilmiş olup hepsinde javascript kull
 - [Todo List](todo-list/)
 - [Todo List v2](todo-list-v2/)
 - [E-commerce Website](e-commerce-website/)
+- [Weather App](weather-app/)
 
 
 
