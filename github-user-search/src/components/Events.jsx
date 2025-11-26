@@ -22,18 +22,18 @@ function Events({ index }) {
   // 2. Event tipini güzelleştiren fonksiyon
   const formatType = (type) => {
     switch (type) {
-      case "WatchEvent": return "Starred ★"; // Yıldızlama
-      case "PushEvent": return "Pushed ⇡";   // Pushlama
-      case "ForkEvent": return "Forked ⑂";   // Forklama
-      case "CreateEvent": return "Created +"; // Oluşturma
-      default: return type.replace("Event", ""); // Diğerleri
+      case "WatchEvent": return "Starred ★";
+      case "PushEvent": return "Pushed ⇡";
+      case "ForkEvent": return "Forked ⑂";
+      case "CreateEvent": return "Created +";
+      default: return type.replace("Event", "");
     }
   };
 
   return (
     <div className='event-wrapper'>
       <div className='events'>
-        {/* Sol Taraf: Repo İsmi (Tıklanabilir Link) */}
+        {/* Sol Taraf: Repo İsmi*/}
         <a 
           href={`https://github.com/${event.repo.name}`} 
           target="_blank" 

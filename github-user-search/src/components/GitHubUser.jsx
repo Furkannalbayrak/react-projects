@@ -15,7 +15,7 @@ function GitHubUser() {
         <div className='github-profile-container'>
             <div className='card'>
                 
-                {/* --- ÜST KISIM (SOL: Profil, SAĞ: Repolar) --- */}
+                {/* --- ÜST KISIM --- */}
                 <div className='top-section'>
                     
                     {/* SOL KISIM: Profil Bilgileri */}
@@ -50,7 +50,7 @@ function GitHubUser() {
                     </div>
                 </div>
 
-                {/* --- ALT KISIM (Eventler - Full Width) --- */}
+                {/* --- ALT KISIM --- */}
                 <div className='bottom-section'>
                     <h3 className='section-title'>Son Aktiviteler (Events)</h3>
                     <div className='events-list'>

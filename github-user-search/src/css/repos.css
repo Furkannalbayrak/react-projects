@@ -1,14 +1,14 @@
 .repo-card {
-    background-color: rgba(81, 75, 75, 0.4); /* Biraz daha transparan */
+    background-color: rgba(81, 75, 75, 0.4);
     border: 1px solid rgba(151, 147, 147, 0.3);
     border-radius: 10px;
     padding: 15px;
     display: flex;
-    justify-content: space-between; /* Sağı ve solu ayır */
+    justify-content: space-between;
     align-items: flex-start;
     transition: all 0.3s ease;
-    width: 100%; /* ÖNEMLİ: Genişliği Grid belirleyecek */
-    height: 100%; /* Kartların boyu eşit olsun */
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
 }
 
@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 80%; /* Kartın %70'ini kaplasın */
+    width: 80%;
 }
 
 .repo-name {
@@ -31,7 +31,7 @@
     font-size: 1.1rem;
     color: rgb(253, 87, 87);
     text-decoration: none;
-    word-break: break-word; /* Uzun isimlerde aşağı kaysın */
+    word-break: break-word;
     line-height: 1.4;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .repo-language {
-    color: #f1e05a; /* JS sarısı gibi genel bir renk */
+    color: #f1e05a;
 }
 
 .visibility {
@@ -63,7 +63,7 @@
 .repo-stats {
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Sağa yasla */
+    align-items: flex-end;
     gap: 10px;
     min-width: 60px;
 }

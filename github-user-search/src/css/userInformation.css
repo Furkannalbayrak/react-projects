@@ -1,3 +1,4 @@
+
 /* Genel Ayarlar */
 .github-profile-container {
     width: 100%;
@@ -8,28 +9,28 @@
 }
 
 .card {
-    background-color: rgba(30, 30, 30, 0.95); /* Biraz daha koyu ve modern */
+    background-color: rgba(30, 30, 30, 0.95);
     width: 100%;
-    max-width: 1200px; /* Çok geniş ekranlarda yayılmasın */
+    max-width: 1200px;
     border-radius: 15px;
     padding: 30px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     color: #e6e6e6;
     display: flex;
     flex-direction: column;
-    gap: 40px; /* Üst ve Alt kısım arası boşluk */
+    gap: 40px;
 }
 
 /* --- ÜST KISIM DÜZENİ --- */
 .top-section {
     display: flex;
-    gap: 30px; /* Sol ve Sağ panel arası boşluk */
-    align-items: flex-start; /* Yukarı hizala */
+    gap: 30px;
+    align-items: flex-start;
 }
 
 /* Sol Panel: Profil */
 .profile-sidebar {
-    width: 350px; /* Genişliğin %30'u profilin */
+    width: 350px;
     background-color: rgba(255, 255, 255, 0.05);
     padding: 20px;
     border-radius: 10px;
@@ -87,13 +88,13 @@
 .detail-item span {
     font-weight: bold;
     color: #fff;
-    min-width: 80px; /* Hizalama için */
+    min-width: 80px;
 }
 
 
 /* Sağ Panel: Repolar */
 .repos-grid {
-    width: 70%; /* Genişliğin %70'i repoların */
+    width: 70%;
 }
 
 .section-title {
@@ -110,9 +111,6 @@
     justify-content: flex-start;
 }
 
-/* Repos componentinin (Card) kendi CSS'i muhtemelen vardır ama 
-   buradan wrapper ile düzeni sağlıyoruz. 
-   Repos componentinin width: %48 civarı olması yan yana 2 tane sığmasını sağlar. */
 
 /* --- ALT KISIM DÜZENİ (EVENTS) --- */
 .bottom-section {
@@ -127,20 +125,22 @@
     gap: 15px;
 }
 
-/* Event kartlarının %100 genişlikte olması için */
+
 .events-list > div {
-    width: 100% !important; /* Events componentindeki kısıtlamayı ezer */
+    width: 100% !important;
     box-sizing: border-box;
 }
 
-/* --- RESPONSIVE TASARIM (MOBİL UYUMLULUK) --- */
+
+/* --------------- RESPONSIVE TASARIM  ------------- */
+
 @media screen and (max-width: 900px) {
     .top-section {
-        flex-direction: column; /* Yan yana değil alt alta olsun */
+        flex-direction: column;
     }
 
     .profile-sidebar {
-        width: 100%; /* Mobilde profil tam genişlik */
+        width: 100%;
         margin-bottom: 20px;
     }
     .github-profile-container{
@@ -148,7 +148,7 @@
     }
 
     .repos-grid {
-        width: 100%; /* Mobilde repolar tam genişlik */
+        width: 100%;
     }
 
     .card {
@@ -162,7 +162,7 @@
     }
 
     .repos-grid {
-        width: 100%; /* Mobilde repolar tam genişlik */
+        width: 100%;
     }
 
     .card {

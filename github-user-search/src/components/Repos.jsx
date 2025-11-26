@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { FaCodeFork, FaEye } from "react-icons/fa6"; // İkon eklersek çok şık durur
+import { FaCodeFork, FaEye } from "react-icons/fa6";
 import '../css/repos.css';
 
 function Repos({ index }) {
