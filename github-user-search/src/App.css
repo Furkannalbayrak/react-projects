@@ -1,0 +1,139 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transform: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+.cotainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    padding-inline: 70px;
+}
+
+.firstContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #161b22;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #30363d;
+}
+
+.githubLogo {
+    font-size: 5rem;
+    color: #58a6ff;
+    margin-bottom: 1.5rem;
+}
+
+.getName {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #c9d1d9;
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.getName:focus {
+    border-color: #58a6ff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(56, 139, 253, 0.3);
+}
+
+.getName::placeholder {
+    color: #6e7681;
+}
+
+.search {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #238636;
+    border: 1px solid rgba(240, 246, 252, 0.1);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+}
+
+.search:hover {
+    background-color: #2ea043;
+    transform: translateY(-1px);
+}
+
+.search:active {
+    background-color: #238636;
+    transform: translateY(0);
+}
+
+
+
+/*?------------------------ RESPONSİVE TASARIM -----------------------*/
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .firstContainer {
+        width: 90%;
+        padding: 1.5rem;
+    }
+    
+    .githubLogo {
+        font-size: 4rem;
+    }
+    
+    .getName, .search {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .cotainer{
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cotainer{
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+.repo-card {
+    background-color: rgba(81, 75, 75, 0.4); /* Biraz daha transparan */
+    border: 1px solid rgba(151, 147, 147, 0.3);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between; /* Sağı ve solu ayır */
+    align-items: flex-start;
+    transition: all 0.3s ease;
+    width: 100%; /* ÖNEMLİ: Genişliği Grid belirleyecek */
+    height: 100%; /* Kartların boyu eşit olsun */
+    box-sizing: border-box;
+}
+
+.repo-card:hover {
+    transform: translateY(-2px);
+    background-color: rgba(81, 75, 75, 0.6);
+    border-color: rgba(253, 87, 87, 0.5);
+}
+
+/* Sol Kısım: İsim ve Dil */
+.repo-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 80%; /* Kartın %70'ini kaplasın */
+}
+
+.repo-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: rgb(253, 87, 87);
+    text-decoration: none;
+    word-break: break-word; /* Uzun isimlerde aşağı kaysın */
+    line-height: 1.4;
+}
+
+.repo-name:hover {
+    text-decoration: underline;
+}
+
+.repo-meta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+.repo-language {
+    color: #f1e05a; /* JS sarısı gibi genel bir renk */
+}
+
+.visibility {
+    border: 1px solid #555;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    text-transform: capitalize;
+}
+
+/* Sağ Kısım: İstatistikler */
+.repo-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Sağa yasla */
+    gap: 10px;
+    min-width: 60px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.icon {
+    font-size: 1rem;
+}
