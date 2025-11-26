@@ -33,6 +33,7 @@ function Events({ index }) {
   return (
     <div className='event-wrapper'>
       <div className='events'>
+        
         {/* Sol Taraf: Repo İsmi*/}
         <a 
           href={`https://github.com/${event.repo.name}`} 

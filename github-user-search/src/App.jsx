@@ -16,8 +16,6 @@ function App() {
   const dispatch = useDispatch();
   const [name, setName] = useState("");
 
-
-
   const callAPI = () => {
     dispatch(getUser(name));
     dispatch(getUserRepos(name));
@@ -30,7 +28,6 @@ function App() {
 
   return (
     <div>
-
       <Loading />
 
       <div className='cotainer'>
@@ -48,7 +45,6 @@ function App() {
               </div>
           }
         </div>
-
 
       </div>
 
