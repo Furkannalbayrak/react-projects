@@ -2,7 +2,6 @@ import { useState } from 'react'
 import './App.css'
 import './css/events.css'
 import './css/repos.css'
-import './css/responsive.css'
 import './css/userInformation.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { getUser, getUserEvent, getUserRepos } from './redux/githubSlice';
