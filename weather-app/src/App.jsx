@@ -1,7 +1,8 @@
-
 import { use, useEffect, useState } from 'react'
 import './App.css'
 import axios from 'axios';
+
+const APIKEY = import.meta.env.VITE_OPENWEATHERMAP_KEY;
 
 function App() {
 
@@ -13,10 +14,10 @@ function App() {
     if (cityName) {
 
       try {
-        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=ac5a7d5afecb462a2d238efacc8cd6b6&units=metric&lang=tr`);
+        const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APIKEY}&units=metric&lang=tr`);
         setData(response.data);
       } catch (error) {
-        alert("Girdiginiz şehir bulunamadı!!!");
+        alert("Girdiginiz şehir bulunamadı !");
       }
 
     }
