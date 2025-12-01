@@ -9,6 +9,8 @@ function Home() {
   const [filterMovies, setFilterMovies] = useState([]);
   const [loading, setLoading] = useState(false);
 
+  const APIKEY = import.meta.env.VITE_OMDBAPI_KEY;
+
   const popularMovies = [
     "Inception", "The Godfather", "The Dark Knight", "Forrest Gump", "Pulp Fiction", "Fight Club", "Interstellar", "The Matrix", "The Lord of the Rings", "Titanic", "Dog", "The Prestige", "The Green Mile", "Avatar", "V For Vendetta", "The Lord of the Rings: The Return of the King", "The Lord of the Rings: The Fellowship of the Ring", "Léon", "Pirates Of The Caribbean: The Curse Of The Black Pearl", "Pirates of the Caribbean: Dead Man's Chest", "The Pianist", "Gladiator", "Ice Age: Dawn of the Dinosaurs", "The Hobbit: An Unexpected Journey", "The Shawshank Redemption", "Memento", "Scarface", "Taxi Driver", "Star Wars: Episode V - The Empire Strikes Back", "Spider-Man: Across the Spider-Verse"
   ];
@@ -19,7 +21,7 @@ function Home() {
       try {
         const responses = await Promise.all(
           popularMovies.map((movieName) =>
-            axios.get(`http://www.omdbapi.com/?apikey=744d179f&t=${movieName}`)
+            axios.get(`http://www.omdbapi.com/?apikey=${APIKEY}=${movieName}`)
           )
         );
         setMainMovies(responses.map(res => res.data));
