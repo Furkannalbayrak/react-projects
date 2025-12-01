@@ -12,7 +12,7 @@ Tüm projeler **React + Vite** ile geliştirilmiş olup hepsinde javascript kull
 - [E-commerce Website](e-commerce-website/)
 - [Weather App](weather-app/)
 - [GitHub User Search](github-user-search/)
-
+- [Movie Explorer](movie-explorer/)
 
 
 
