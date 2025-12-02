@@ -1,6 +1,6 @@
 # Currency Converter
 
-Bu proje, farklı para birimleri arasında hızlı ve basit şekilde dönüşüm yapmanızı sağlayan bir React uygulamasıdır. Vite ile oluşturulmuş olup anında yenileme ve optimize build desteği sunar. Kur bilgileri, **FreeCurrencyAPI** üzerinden çekilmektedir.
+Bu proje, farklı para birimleri arasında hızlı ve basit şekilde dönüşüm yapmanızı sağlayan bir React uygulamasıdır. Vite ile oluşturulmuş olup anında yenileme ve optimize build desteği sunar. Kur bilgileri, [Free Currency API](https://freecurrencyapi.com/) üzerinden çekilmektedir.
 
 ## 🚀 Özellikler
 
