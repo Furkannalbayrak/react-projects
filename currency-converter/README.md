@@ -39,12 +39,17 @@ Projeyi yerelde çalıştırmak için:
      npm install
      ```
 
-6. Geliştirme sunucusunu başlatın
+6. **Önemli:** Projenin ana dizininde `.env` adında bir dosya oluşturun ve FreeCurrency API anahtarınızı içine şu şekilde ekleyin:
+     ```env
+     VITE_FREECURRENCYAPI_KEY=sizin_api_anahtariniz
+     ```
+
+7. Geliştirme sunucusunu başlatın
      ```bash
      npm run dev
      ```
      
-7. Tarayıcıda verilen yerel adresi ziyaret edin (örn. `http://localhost:5173`).
+8. Tarayıcıda verilen yerel adresi ziyaret edin (örn. `http://localhost:5173`).
 
 ### Build Alma
 1. Üretim içim optimize build almak:
