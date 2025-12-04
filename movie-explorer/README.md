@@ -1,4 +1,4 @@
-# FilmCeNNeti - Film Arama Uygulaması
+# Movie Explorer
 
 Bu proje, geniş bir film arşivinde arama yapmanızı ve filmlerin detaylı bilgilerine ulaşmanızı sağlayan modern bir React uygulamasıdır. Vite ile oluşturulmuş olup Tailwind CSS ile şık ve responsive bir tasarım sunar. Film verileri, [OMDb API](http://www.omdbapi.com/) üzerinden anlık olarak çekilmektedir.
 
