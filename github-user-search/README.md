@@ -29,6 +29,7 @@ Bu proje, GitHub kullanıcılarını aramanızı, profillerini detaylı bir şek
 ## 💻 Kullanılan Teknolojiler ve Yazılım Dilleri
 - React
 - Vite
+- JavaScript (ES Modules)
 - Redux Toolkit (Global State & Async Thunk)
 - Axios (HTTP İstekleri)
 - Material UI

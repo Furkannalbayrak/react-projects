@@ -30,6 +30,8 @@ Bu proje, modern bir e-ticet deneyimi sunan bir React uygulamasıdır. Vite ile 
 
 ## 💻 Kullanılan Teknolojiler ve Yazılım Dilleri
 - React
+- JavaScript (ES Modules)
+- CSS
 - React Router DOM
 - Redux Toolkit
 - Material-UI (MUI)

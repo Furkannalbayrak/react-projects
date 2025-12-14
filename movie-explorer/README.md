@@ -24,6 +24,7 @@ Bu proje, geniş bir film arşivinde arama yapmanızı ve filmlerin detaylı bil
 ## 💻 Kullanılan Teknolojiler ve Yazılım Dilleri
 - React
 - Vite
+- JavaScript (ES Modules)
 - Tailwind CSS
 - React Router DOM (Sayfa Yönlendirme)
 - Axios (HTTP istekleri için)
