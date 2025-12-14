@@ -1,6 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { act } from 'react';
-
 
 const getFromStorage = () => {  // doluysa verileri çeker yoksa boş dizi gönderir
   if (localStorage.getItem("basket")) {
@@ -12,7 +10,7 @@ const getFromStorage = () => {  // doluysa verileri çeker yoksa boş dizi gönd
 }
 
 const initialState = {
-  products: [] = getFromStorage(),
+  products: getFromStorage(),
   drawer: false,
   totalPrice: 0,
 }
@@ -23,22 +21,27 @@ const writeToStorage = (basket) => {
 
 
 export const basketSlice = createSlice({
-  name: 'counter',
+  name: 'basket',
   initialState,
   reducers: {
     addToBasket: (state, action) => {
-      const findProduct = state.products && state.products.find((urun) => urun.id == action.payload.id);
+      const findProduct = state.products && state.products.find((urun) => urun.id === action.payload.id);
+
       if (findProduct) {
-        // daha önce eklenmiş olan ürün
-        const updatedProducts = state.products.filter((urun) => urun.id != action.payload.id);
         findProduct.amount += action.payload.amount;
-        state.products = [...updatedProducts, findProduct];
-        writeToStorage(state.products);
       }
       else {
-        state.products = [...state.products, action.payload];
-        writeToStorage(state.products);
+        // Yeni ürünse listeye ekle
+        state.products.push(action.payload);
       }
+
+      writeToStorage(state.products);
+
+      // Fiyatı güncelle
+      state.totalPrice = 0;
+      state.products.forEach((urun) => {
+        state.totalPrice += urun.price * urun.amount;
+      });
     },
 
     setDrawer: (state) => {
@@ -46,29 +49,32 @@ export const basketSlice = createSlice({
     },
 
     calculateTotalPrice: (state) => {
-      state.products && state.products.map((urun) => (
+      state.totalPrice = 0;
+      state.products && state.products.forEach((urun) => {
         state.totalPrice += urun.price * urun.amount
-      ))
+      })
     },
 
     deleteProduct: (state, action) => {
       state.products = state.products.map((urun) => {
-          if (urun.id === action.payload.id) {
+        if (urun.id === action.payload.id) {
 
-            if (urun.amount > 1) {
-              return { ...urun, amount: urun.amount - 1 }; // Ürün miktarını 1 azalt
-              
-            } else {
-              return null; // Eğer miktar 1 ise, ürünü kaldır
-            }
-            
+          if (urun.amount > 1) {
+            return { ...urun, amount: urun.amount - 1 }; // Ürün miktarını 1 azalt
+
+          } else {
+            return null; // Eğer miktar 1 ise, ürünü kaldır
           }
-          return urun;
-        }) 
+        }
+        return urun;
+      })
         .filter((urun) => urun !== null); // null olanları temizle
 
-        calculateTotalPrice();
-    
+      state.totalPrice = 0;
+      state.products.forEach((urun) => {
+        state.totalPrice += urun.price * urun.amount;
+      });
+
       writeToStorage(state.products); // Güncellenmiş veriyi localStorage'a yaz
     }
 
